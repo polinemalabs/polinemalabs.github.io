@@ -30,7 +30,7 @@
     "paper-header-panel": "PolymerElements/paper-header-panel#^1.0.4",
     "paper-listbox": "PolymerElements/paper-listbox#^1.0.0",
     "paper-tabs": "PolymerElements/paper-tabs#^1.1.0",
-    "polymer": "1.4.0",
+    "polymer": "^1.1.0",
     "url-search-params-polyfill": "WebReflection/url-search-params#^0.5.0"
   }
 }
