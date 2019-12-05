@@ -1,0 +1,36 @@
+{
+  "name": "polinemalabs",
+  "description": "",
+  "main": "",
+  "authors": ["Dian Hanifudin Subhi <dhanifudin@gmail.com>"],
+  "license": "MIT",
+  "homepage": "https://github.com/polinemalabs/polinemalabs.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "app-layout": "PolymerElements/app-layout#^0.10.0",
+    "font-roboto": "PolymerElements/font-roboto#^1.0.1",
+    "google-apis": "GoogleWebComponents/google-apis#^1.0.0",
+    "google-codelab-elements": "googlecodelabs/codelab-components#^1.0.0",
+    "google-youtube": "GoogleWebComponents/google-youtube#^1.2.1",
+    "iron-a11y-announcer": "PolymerElements/iron-a11y-announcer#^1.0.0",
+    "iron-autogrow-textarea": "PolymerElements/iron-autogrow-textarea#^1.0.0",
+    "iron-dropdown": "PolymerElements/iron-dropdown#^1.0.0",
+    "iron-input": "PolymerElements/iron-input#^1.0.0",
+    "iron-pages": "PolymerElements/iron-pages#^1.0.4",
+    "jszip": "^2.5.0",
+    "paper-dropdown-menu": "PolymerElements/paper-dropdown-menu#^1.0.4",
+    "paper-header-panel": "PolymerElements/paper-header-panel#^1.0.4",
+    "paper-listbox": "PolymerElements/paper-listbox#^1.0.0",
+    "paper-tabs": "PolymerElements/paper-tabs#^1.1.0",
+    "polymer": "1.4.0",
+    "url-search-params-polyfill": "WebReflection/url-search-params#^0.5.0"
+  }
+}
