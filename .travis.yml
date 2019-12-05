@@ -3,7 +3,6 @@ sudo: false
 
 env:
   - NODE_VERSION="12"
-  - CODELABS=codelabs
 
 branches:
   only:
@@ -18,12 +17,11 @@ before_install:
   - go get github.com/googlecodelabs/tools/claat
 
 install:
-  - npm install -g gulp-cli
   - npm install
 
 script:
   - cd codelabs; claat export *.md
-  - gulp dist --codelabs-dir=$CODELABS
+  - npm run dist
 
 deploy:
   provider: pages
