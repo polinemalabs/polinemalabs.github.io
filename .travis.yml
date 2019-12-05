@@ -10,6 +10,7 @@ branches:
 
 cache:
   directories:
+    - app/bower_components
     - node_modules
 
 before_install:
@@ -22,8 +23,8 @@ install:
 script:
   - cd codelabs; claat export *.md
   - npm run dist
-  - unlink dist/codelabs
-  - cp -r codelabs dist/
+  - unlink $TRAVIS_BUILD_DIR/dist/codelabs
+  - cp -r $TRAVIS_BUILD_DIR/codelabs $TRAVIS_BUILD_DIR/dist/
 
 deploy:
   provider: pages
