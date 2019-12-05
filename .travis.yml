@@ -1,0 +1,35 @@
+language: go
+sudo: false
+
+env:
+  - NODE_VERSION="12"
+  - CODELABS=codelabs
+
+branches:
+  only:
+    - develop
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - nvm install $NODE_VERSION
+  - go get github.com/googlecodelabs/tools/claat
+
+install:
+  - npm install -g gulp-cli
+  - npm install
+
+script:
+  - cd codelabs; claat export *.md
+  - gulp dist --codelabs-dir=$CODELABS
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  target_branch: master
+  on:
+    branch: develop
