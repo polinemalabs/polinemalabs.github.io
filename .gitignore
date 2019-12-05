@@ -9,8 +9,5 @@ app/js/bundle/
 
 !app/bower_components/*/.bower.json
 
-codelabs/*/*.html
-codelabs/*/*.json
-
 build/
 dist/
