@@ -22,6 +22,8 @@ install:
 script:
   - cd codelabs; claat export *.md
   - npm run dist
+  - unlink dist/codelabs
+  - cp -r codelabs dist/
 
 deploy:
   provider: pages
